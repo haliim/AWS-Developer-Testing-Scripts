@@ -3,7 +3,7 @@
 #Install httpd linux version 2
 sudo su
 yum update -y
-yum install httpd.x86_64
+yum install httpd.x86_64 -y
 systemctl start httpd.service
 systemctl enable httpd.service
 echo "Hello World I'm Halim from $(hostname -f)" > /var/www/html/index.html
