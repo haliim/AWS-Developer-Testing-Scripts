@@ -1,6 +1,7 @@
 #!/bin/bash
 #testing your EC2 and preinstall apache server
 #Install httpd linux version 2
+sudo su
 yum update -y
 yum install httpd.x86_64
 systemctl start httpd.service
